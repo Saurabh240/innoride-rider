@@ -8,9 +8,9 @@ class Environment {
 
   // LOGIN AND REG PART
   static const int otpResendSecond = 120; //OTP RESEND second
-  static const String defaultCountryCode = 'US'; //Default Country Code
-  static const String defaultDialCode = '1'; //Default Country Code
-  static const String defaultCountry = 'United States'; //Default Country Code
+  static const String defaultCountryCode = 'IN'; //Change to ZA
+  static const String defaultDialCode = '91'; //Change to 27
+  static const String defaultCountry = 'India'; //Change to South Africa
 
   //MAP CONFIG
   // static const String mapKey = "Enter Your Map Api Key"; //Enter Your Map Api Key

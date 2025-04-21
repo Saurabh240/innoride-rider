@@ -1,4 +1,4 @@
-package com.ovosolution.ovorideuser
+package com.innoride.innorideuser
 
 import io.flutter.embedding.android.FlutterActivity
 

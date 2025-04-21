@@ -2,7 +2,7 @@ import 'package:ovorideuser/data/model/language/language_model.dart';
 
 class MyStrings {
   //APP Name
-  static const String appName = "OvoRide";
+  static const String appName = "InnoRide";
 
   //Onboard
   static const String continue_ = "Continue";
