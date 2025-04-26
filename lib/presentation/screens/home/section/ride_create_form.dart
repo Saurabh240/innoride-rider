@@ -65,7 +65,7 @@ class RideCreateForm extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Expanded(
+            /*    Expanded(
                   flex: 2,
                   child: InkWell(
                     onTap: () {
@@ -105,7 +105,7 @@ class RideCreateForm extends StatelessWidget {
                     ),
                   ),
                 ),
-                spaceSide(Dimensions.space15),
+                spaceSide(Dimensions.space15),*/
                 Expanded(
                   flex: 2,
                   child: InkWell(

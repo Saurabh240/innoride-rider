@@ -9,6 +9,8 @@ import 'package:ovorideuser/data/repo/auth/general_setting_repo.dart';
 import 'package:ovorideuser/data/services/api_service.dart';
 import 'package:ovorideuser/presentation/components/custom_no_data_found_class.dart';
 
+import '../../../generated/assets.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -57,8 +59,8 @@ class _SplashScreenState extends State<SplashScreen>
                   children: [
                     Align(
                         alignment: Alignment.center,
-                        child: Image.asset(MyImages.appLogoIcon,
-                            height: 100, width: 100)),
+                        child: Image.asset(Assets.logoSplashIcon,
+                            height: 180, width: 180)),
                   ],
                 ),
         ),

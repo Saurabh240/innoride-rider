@@ -56,7 +56,7 @@ class CustomBidToast {
               children: [
                 Expanded(
                     child: RoundedButton(
-                  text: 'Decline',
+                  text:  MyStrings.decline.tr,
                   press: () {
                     if (reject != null) {
                       reject();
@@ -64,19 +64,19 @@ class CustomBidToast {
                       Get.back();
                     }
                   },
-                  color: MyColor.colorGrey,
+                  color: MyColor.redCancelTextColor,
                   isColorChange: true,
                 )),
                 const SizedBox(width: Dimensions.space10),
                 Expanded(
                     child: RoundedButton(
-                  text: 'Accept',
-                  press: () {
+                      text: MyStrings.accept.tr,
+                      press: () {
                     printX('Accept from snackbar');
                     Get.back();
                     accepted();
                   },
-                  color: MyColor.primaryColor,
+                  color: MyColor.greenSuccessColor,
                   isColorChange: true,
                 )),
               ],
@@ -142,7 +142,7 @@ class CustomBidToast {
                       Get.back();
                     }
                   },
-                  color: MyColor.colorGrey,
+                  color: MyColor.colorRed,
                   isColorChange: true,
                 )),
                 const SizedBox(width: Dimensions.space10),
@@ -153,7 +153,7 @@ class CustomBidToast {
                     printX('Accept from snackbar');
                     accepted();
                   },
-                  color: MyColor.primaryColor,
+                  color: MyColor.colorGreen,
                   isColorChange: true,
                 )),
               ],

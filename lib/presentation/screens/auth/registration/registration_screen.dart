@@ -79,9 +79,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset(MyImages.appLogoWhite,
+                                  /*Image.asset(MyImages.appLogoWhite,
                                       width: MediaQuery.of(context).size.width /
-                                          3),
+                                          3),*/
                                   SvgPicture.asset(MyIcons.bg),
                                 ],
                               ),
