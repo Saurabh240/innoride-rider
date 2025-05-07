@@ -41,6 +41,8 @@ class SocialAuthController extends GetxController {
   }
 
   bool isAppleSignInLoading = false;
+
+
   Future signInWithApple() async {
     isAppleSignInLoading = true;
     update();
