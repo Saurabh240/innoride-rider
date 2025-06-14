@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:ovorideuser/core/helper/string_format_helper.dart';
@@ -59,6 +60,8 @@ class SocialAuthController extends GetxController {
       printX(credential.identityToken);
       printX(credential.authorizationCode);
       printX(credential.identityToken);
+      await socialLoginUser(
+          provider: 'apple', accessToken: credential.userIdentifier ?? '');
     } catch (e) {
       printX(e.toString());
       CustomSnackBar.error(errorList: [MyStrings.somethingWentWrong]);
@@ -67,12 +70,38 @@ class SocialAuthController extends GetxController {
       update();
     }
   }
-
+ /* Future signInWithApple() async {
+    isAppleSignInLoading = true;
+    update();
+    try {
+      final AuthorizationCredentialAppleID credential =
+      await SignInWithApple.getAppleIDCredential(scopes: [
+        AppleIDAuthorizationScopes.email,
+        AppleIDAuthorizationScopes.fullName,
+      ]);
+      printX(credential.email);
+      printX(credential.givenName);
+      printX(credential.familyName);
+      printX(credential.authorizationCode);
+      printX(credential.identityToken);
+      printX(credential.authorizationCode);
+      printX(credential.identityToken);
+      socialLoginUser(
+          accessToken: credential.userIdentifier ?? '', provider: 'apple');
+    } catch (e) {
+      printX(e.toString());
+      CustomSnackBar.error(errorList: [MyStrings.somethingWentWrong]);
+    } finally {
+      isAppleSignInLoading = false;
+      update();
+    }
+  }*/
   Future socialLoginUser({
     String accessToken = '',
     String? provider,
   }) async {
     try {
+      debugPrint("accessToken ====> $accessToken");
       ResponseModel responseModel = await authRepo.socialLoginUser(
         accessToken: accessToken,
         provider: provider,

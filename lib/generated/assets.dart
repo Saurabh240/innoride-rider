@@ -151,7 +151,7 @@ class Assets {
   static const String onboardOnboard1 = 'assets/images/onboard/onboard_1.png';
   static const String onboardOnboard2 = 'assets/images/onboard/onboard_2.png';
   static const String onboardOnboard3 = 'assets/images/onboard/onboard_3.png';
-  static const String socialApple = 'assets/images/social/apple.png';
+  static const String socialAppleWhite = 'assets/images/social/apple.png';
   static const String socialFacebook = 'assets/images/social/facebook.png';
   static const String socialGoogle = 'assets/images/social/google.png';
   static const String socialLinkedin = 'assets/images/social/linkedin.png';

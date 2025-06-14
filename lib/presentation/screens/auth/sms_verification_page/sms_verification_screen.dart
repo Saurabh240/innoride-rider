@@ -67,8 +67,8 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset(MyImages.appLogoWhite,
-                              width: MediaQuery.of(context).size.width / 3),
+                         /* Image.asset(MyImages.appLogoWhite,
+                              width: MediaQuery.of(context).size.width / 3),*/
                           Align(
                               alignment: Alignment.center,
                               child: SvgPicture.asset(MyIcons.bg,

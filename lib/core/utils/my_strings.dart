@@ -7,10 +7,10 @@ class MyStrings {
   //Onboard
   static const String continue_ = "Continue";
 
-  static const String onboardTitle1 = "Check bid rate book a ride"; //Title 1
+  static const String onboardTitle1 = "Request a ride"; //Title 1
 
   static const String onboardDescription1 =
-      "User can set their bid amount for their destination, driver bid depend on user bid amount , if user satisfy they can book ride.";
+      "User can request instant ride and get connected to the cheapest ride available";
 
   static const String onboardTitle2 = "City to City Ride Service"; //Title 2
 

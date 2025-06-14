@@ -19,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -27,7 +27,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.159266541498-8u0dktn0hia163arigcdq9lhqvheqgsv</string>
+				<string>com.googleusercontent.apps.159266541498-krisjt5cmtglcll0m42987qveoinklgl</string>
 			</array>
 		</dict>
 		<dict>
@@ -46,20 +46,46 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+
 	<key>NSCameraUsageDescription</key>
-	<string>This app requires access to the camera.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app needs access to location when open.</string>
+    <string>Inno Rider requires access to your camera to capture photos or videos for profile setup, identity verification, and ride documentation.</string>
+
+
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>This app requires permission to save media to the photo library.</string>
+	<string>Inno Riders requires permission to save media to the photo library.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app requires access to the photo library.</string>
+	<string>Inno Riders requires access to the photo library.</string>
+
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>Inno Rider needs access to your location while the app is in use to provide features like live ride tracking and nearby driver discovery.</string>
+
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Inno Rider needs access to your location at all times to provide continuous ride tracking and background updates.</string>
+
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Inno Rider needs access to your location even when the app is in the background to ensure seamless ride tracking and accurate pickups.</string>
+
+    <key>NSLocationUsageDescription</key>
+    <string>Inno Rider requires your location to offer key services like finding nearby drivers and ensuring accurate drop-off points.</string>
+
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Inno Rider requires permission to save photos and videos to your photo library, such as ride receipts or media from within the app.</string>
+
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Inno Rider requires access to your photo library to let you upload profile pictures and view saved ride-related media.</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Inno Rider requires microphone access for audio recording during in-app video capture or support communication.</string>
+
+    <key>NSContactsUsageDescription</key>
+    <string>Inno Rider requires access to your contacts to help you easily invite friends, share ride details, or connect with emergency contacts.</string>
+
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>fetch</string>
 		<string>remote-notification</string>
+		<string>fetch</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
